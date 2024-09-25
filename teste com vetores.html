@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html> <head> <meta charset="utf-8"> </head> <body> <h2>Testes com Vetores</h2>
+	<script>
+		const frutas = ["laranja", "limão", "maçã", "uva", "abacaxi","pêssego","melância","banana"];
+		console.log(frutas); //mostrando no console
+		frutas.push("tomate", "acerola", "carro"); //adiciona um novo elemento ao final
+		console.log(frutas);
+		frutas.splice(10, 0, "gelo", "copo", 10); //permite adicionar, remover e substituir elementos
+		console.log(frutas);
+		delete frutas[12]; // Remove o elemento indicado e no lugar define um espaço vazio.
+		console.log(frutas); 
+		frutas.pop(); //Remove o último elemento
+		console.log(frutas);
+		frutas.shift(); //Remove o primeiro elemento
+		console.log(frutas);
+		frutas.length = 11
+		console.log(frutas.length); //Define o tamanho máximo do vetor, excluindo os demais elementos
+		console.log(frutas);
+		frutas.splice(4,7);
+		console.log(frutas);
+	</script>
+</body> </html>

@@ -1,0 +1,13 @@
+Manipulação de Vetores
+
+Cópia com slice
+
+<html> <body>
+	<script>
+		const dias = ["dom","seg","ter","qua","qui","sex","sab"];
+		const dias_uteis = dias.slice(1,6); //cria uma cópia do vetor original.
+		// inicío e fim + 1
+		console.log(dias);
+		console.log(dias_uteis);
+	</script>
+</body> </html>

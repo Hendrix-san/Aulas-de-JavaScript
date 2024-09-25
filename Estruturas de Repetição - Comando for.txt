@@ -1,0 +1,12 @@
+Estruturas de Repetição
+
+Comando for - Para/Faça
+
+Repetição para uma faixa Especificada
+¬Comandos são executados para cada valor fornecido na
+estrutura de controle.
+¬Divide a estrutura em três áreas:inicialização, teste e incremento.
+
+for ( let a = 1; a <= 10; a++){
+	console.log(a);
+}

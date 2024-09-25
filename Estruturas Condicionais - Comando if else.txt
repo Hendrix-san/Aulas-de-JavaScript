@@ -1,0 +1,16 @@
+Estruturas Condicionais
+
+Comando if else
+
+Execução Condicional com Negativa
+¬Comandos diferentes executados para cada
+resultado da condição (verdadeira ou falsa).
+¬Para mais de uma instrução, é obrigatório
+delimitar o bloco com chaves, mas para uma instrução
+simples as chaves são opcionais.
+
+let a = eval(prompt("Numero"));
+if( a % 2 == 0)
+	alert("O número é par");
+else
+	alert("O número é ímpar");

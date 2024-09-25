@@ -1,0 +1,13 @@
+Manipulação com Vetores
+
+Inclusão e Remoção com Splice
+¬Parâmetros: posição, quantidade a ser removida e conteúdo novo.
+¬Diferente de delete, que apenas indefine
+<html> <body> <script>
+	const vetor = [1,2,3,4,5,6,7];
+	console.log(vetor); //1,2,3,4,5,6,7
+	vetor.splice(2,3);
+	console.log(vetor); //1,2,6,7
+	vetor.splice(2,0,"X","X"); //Adiciona antes da posição especificada
+	console.log(vetor); //1,2,X,X,6,7
+</script> </body> </html>

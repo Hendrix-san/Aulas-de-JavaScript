@@ -1,0 +1,32 @@
+Composição e Criação de Vetores
+
+Ordenação, Mapeamento e Redução
+
+<html> <body> <button onClick ="executar()">Clique Aqui</button>
+<script>
+executar = () =>{
+	const valores = [1,6,5,9,2];
+	valores.sort(); //ordenação
+	console.log(valores);
+	console.log(`Valor na posição 3: ${valores[3]}`);
+	valores.forEach((element, index) => console.log(`Valor[${index}]:${element}`));
+	const somaDobro = valores.map((e) => e*2).reduce((a,b) => a+b);
+	console.log("Soma 2x = "+somaDobro);
+}
+</script>
+</body> </html>
+
+Exemplo com Randômicos
+<html> <body> <table style="width: 100%;">
+	<script>
+	const cores = ["red","green","blue"];
+	for(let i=1; i<10; i++){
+		document.write("<tr>");
+		for (let j = 1; j<10; j++){
+		let pos = Math.trunc(Math.random()*3);
+		document.write(`<td style='background-color:${cores[pos]}'> &nbsp;</td>`);
+		}
+		document.write("</tr>");
+	}
+	</script>
+</table> </body> </html>

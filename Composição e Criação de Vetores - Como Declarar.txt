@@ -1,0 +1,15 @@
+Criação e Utilização de Vetores
+
+Em JavaScript, os vetores não possuem tipo, a exemplo do que vimos quando tratamos das variáveis. Logo, é possível criar um array composto por números, strings, objetos e até mesmo outros arrays.
+
+Em JS, um vetor pode ter, no máximo, 4.294.967.295 elementos. Outra característica importante é que, em JavaScript, os arrays possuem tamanho dinâmico, ou seja, não é necessário informar o tamanho do vetor ao declará-lo.
+
+Exemplo de criação de vetores em JS:
+var alunos = []; //array vazio
+var alunos = ['Alex', 'Anna', 'João']; // array de strings
+var notas = [10.0, 9.5, 9.5]; // array de números decimais
+var mistura = ['Um', 2, 3, 'Quatro']; //array de diversos tipos de dados
+
+Outra forma de criação de vetores em JavaScript é usando o construtor (conceito relacionado à programação orientada a objetos) array. Veja o exemplo:
+var alunos = new Array();
+var alunos = new Array('Alex', 'Anna', 'João');

@@ -1,0 +1,19 @@
+Operadores Relacionais
+
+const a = 10, b = 5;
+let w;//Poderia ser utilizado var
+
+Instrução  | Resultado
+w = a > b; | true
+w = a < b; | false
+w = a == b;| false
+w = a != b;| true
+w = a >= b;| true
+w = a <= b;| false
+
+Características Gerais
+¬ Tem como entrada dois valores numéricos e como saída
+um valor booleano
+¬ Aceita variáveis e instruções aritméticas
+
+let f = ( x + 2) < Math.pow(x, 3);

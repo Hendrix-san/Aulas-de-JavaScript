@@ -1,0 +1,29 @@
+Estruturas de Repetição
+
+Comando while - Enquanto/Faça
+
+Repetição Condicional com Teste no Início
+¬Comandos são executados enquanto a condição for verdadeira.
+¬Para mais de uma instrução, é obrigatório delimitar o bloco com chaves, mas 
+para uma instrução simples as chaves são opcionais.
+
+let a = 1;
+while (a<=10){
+	console.log(a);
+	a++;
+}
+
+Comando do while - Faça/Enquanto
+
+Repetição Condicional com Teste ao Final
+¬Comandos são repetidos enquanto a condição for verdadeira,
+com o teste ao final.
+¬Para mais de uma instrução, é obrigatório delimitar o bloco com chaves, mas 
+para uma instrução simples as chaves são opcionais.
+¬Ele executa pelo menos uma vez mesmo que a condição seja falsa.
+
+let a = 1;
+do{
+	console.log(a);
+	a++;
+} while( a <= 10);

@@ -1,0 +1,16 @@
+Estruturas Condicionais
+
+Operadores Lógicos
+
+A     |B     |A&&B  |A||B  |!A    |
+false |false |false |false |true  |
+false |true  |false |true  |true  |
+true  |false |false |true  |false |
+true  |true  |true  |true  |false |
+
+Características Gerais
+¬Tem como entrada dois valores booleanos e como saída
+um valor booleano.
+¬Permite combinar operações relacionais.
+¬Curto-circuito minimiza comparações.
+let f = ( x <= 2) && ( y!= 3);

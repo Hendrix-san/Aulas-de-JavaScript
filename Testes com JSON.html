@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Requisição a recurso JSON</title>
+</head>
+<body>
+	<button onclick="loadRemoteJson()">Carregar Json</button>
+</body>
+	<script type="text/javascript">
+	
+		function loadRemoteJson(){
+			var url = "https://dummyjson.com/products/1"
+			
+			fetch(url, {
+				method: 'get'
+			})
+			.then(function(resposta) {
+				resposta.json().then(function(rotulo){
+					console.log("Product Id: " + rotulo.id);
+					console.log("Product Title: " + rotulo.title);
+					console.log("Product Description: " + rotulo.description);
+					console.log("Product Price: " + rotulo.price);
+					console.log("Product Discount Percentage: " + rotulo.discountPercentage);
+					console.log("Product Rating: " + rotulo.rating);
+					console.log("Product Stock: " + rotulo.stock);
+					console.log("Product Brand: " + rotulo.brand);
+					console.log("Product Category: " + rotulo.category);
+					console.log("Product Thumbnail: " + rotulo.thumbnail);
+					console.log("Product Images: " + rotulo.images);
+					console.log("Product Tags: " + rotulo.tags);
+				});
+			})
+			.catch(function(err) {
+				console.error('O seguinte erro ocorreu durante a requisição: ' + err);
+			});
+		}
+	</script>
+</html>
